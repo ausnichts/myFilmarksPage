@@ -42,7 +42,7 @@ server.on('request', function(req, res){
               j++;
               if (j === Number(page)){
                 if (url === '') url = 'no mark';
-                res.setHeader('Access-Control-Allow-Origin', 'https://ausnichts.hatenadiary.jp'); // クライアントのオリジン
+                res.setHeader('Access-Control-Allow-Origin', 'https://www.movieimpressions.com/'); // クライアントのオリジン
                 res.writeHead(200, {'Content-Type' : 'application/plain'});
                 res.write(url);
                 res.end();
